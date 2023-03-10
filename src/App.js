@@ -3,23 +3,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello world</h1>
+      <img src = {logo} style = {{width: "100px", height: "100px"}}></img>
     </div>
   );
 }
+
+export function Paragraph() {
+  return (
+    <p className='paragraph' style = {styles.paragraph}>Paragraph</p>
+  )
+}
+
+const styles = {
+  paragraph: {
+    color: "red",
+    backgroundColor: "blue"
+  }
+}
+
+
 
 export default App;
